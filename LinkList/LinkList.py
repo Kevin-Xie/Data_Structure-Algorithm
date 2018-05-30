@@ -49,13 +49,18 @@ class LinkList(object):
 
 
 
-l = LinkList()
-l.append(ListNode(1))
-l.append(ListNode(2))
-l.append(ListNode(3))
-l.append(ListNode(4))
-l.append(ListNode(5))
-l.all()
+def main():
+	l = LinkList()
+	l.append(ListNode(1))
+	l.append(ListNode(2))
+	l.append(ListNode(3))
+	l.append(ListNode(4))
+	l.append(ListNode(5))
+	l.all()
 
-print l.reversePrint()
-l.reverse().all()
+	print l.reversePrint()
+	l.reverse().all()
+
+if __name__ == '__main__':
+	main()
+
