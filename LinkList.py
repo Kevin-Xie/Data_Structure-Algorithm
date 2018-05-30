@@ -15,16 +15,16 @@ class LinkList(object):
 		self.head = ListNode(val='head', next=None)
 
 	def all(self):
-		pointer = self.head
-		while pointer is not None:
-			print pointer.val
-			pointer = pointer.next
+		current = self.head
+		while current is not None:
+			print current.val
+			current = current.next
 
 	def append(self, newNode):
-		pointer = self.head
-		while pointer.next is not None:
-			pointer = pointer.next
-		pointer.next = newNode			
+		current = self.head
+		while current.next is not None:
+			current = current.next
+		current.next = newNode			
 
 	# 翻转链表
 	def reverse(self):
@@ -40,11 +40,11 @@ class LinkList(object):
 	
 	# 逆序打印链表		
 	def reversePrint(self):
-		pointer = self.head
+		current = self.head
 		result = []
-		while pointer is not None:
-			result.insert(0, pointer.val)
-			pointer = pointer.next
+		while current is not None:
+			result.insert(0, current.val)
+			current = current.next
 		return result
 
 
